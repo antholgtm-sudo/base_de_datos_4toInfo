@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de proveedores</title>
+  <link rel="stylesheet" href="formularioProveedor.css">
+</head>
+<body>
+  <main class="pagina">
+    <form class="tarjeta-formulario" id="formularioProveedor">
+      <h1>Registro de proveedores</h1>
+
+      <section class="seccion-formulario">
+        <h2>Representante:</h2>
+
+        <div class="cuadricula">
+          <label>
+            Nombre:
+            <input type="text" name="nombre" placeholder="Juan" required>
+          </label>
+
+          <label>
+            Apellido paterno:
+            <input type="text" name="apellido_paterno" placeholder="Diaz" required>
+          </label>
+
+          <label>
+            Apellido materno:
+            <input type="text" name="apellido_materno" placeholder="Suriel">
+          </label>
+
+          <fieldset class="grupo-radio">
+            <legend>Sexo:</legend>
+            <label>
+              <input type="radio" name="sexo" value="masculino" required>
+              Masculino
+            </label>
+            <label>
+              <input type="radio" name="sexo" value="femenino">
+              Femenino
+            </label>
+          </fieldset>
+        </div>
+
+        <label>
+          Telefono:
+          <input type="tel" name="telefono" placeholder="123-456-7890" maxlength="15" required>
+        </label>
+      </section>
+
+      <section class="seccion-formulario">
+        <h2>Informacion del proveedor:</h2>
+
+        <label>
+          Nombre del proveedor:
+          <input type="text" name="nombre_proveedor" placeholder="Nombre" required>
+        </label>
+
+        <label>
+          Tipo de proveedor:
+          <input type="text" name="tipo_proveedor" placeholder="Flores Naturales" required>
+        </label>
+
+        <label>
+          Ciudad:
+          <select name="id_ciudad" id="ciudad" required>
+            <option value="">Seleccione una ciudad</option>
+          </select>
+        </label>
+
+        <label>
+          Sector:
+          <select name="id_sector" id="sector" required>
+            <option value="">Seleccione un sector</option>
+          </select>
+        </label>
+
+        <label>
+          Calle:
+          <input type="text" name="calle_proveedor" placeholder="Calle" required>
+        </label>
+
+        <label>
+          Numero de departamento:
+          <input type="text" name="num_departamento" placeholder="Local 5" required>
+        </label>
+
+        <label>
+          Correo electronico:
+          <input type="email" name="correo_proveedor" placeholder="correo@ejemplo.com" required>
+        </label>
+      </section>
+
+      <button type="submit">Registrar proveedor</button>
+    </form>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

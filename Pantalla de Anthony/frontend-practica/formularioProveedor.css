@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4f8068;
+  background: #f7fbf8;
+}
+
+.pagina {
+  width: 100%;
+  min-height: 100vh;
+  padding: 34px 18px;
+}
+
+.tarjeta-formulario {
+  width: min(820px, 100%);
+  margin: 0 auto;
+  padding: 28px 34px 34px;
+  background: #ffffff;
+  border-top: 7px solid #76bd8d;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(119, 178, 143, 0.16);
+}
+
+h1 {
+  margin: 0 0 26px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0;
+  color: #39634b;
+}
+
+h2 {
+  display: inline-block;
+  margin: 0 0 20px;
+  font-size: 21px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #437557;
+}
+
+.seccion-formulario {
+  margin-bottom: 28px;
+}
+
+.cuadricula {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px 22px;
+}
+
+label, legend {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #436956;
+}
+
+input, select {
+  width: 100%;
+  height: 43px;
+  margin-top: 9px;
+  padding: 0 13px;
+  font: inherit;
+  font-weight: 400;
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #dce9e0;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus, select:focus {
+  border-color: #7cc995;
+  box-shadow: 0 0 0 3px rgba(118, 189, 141, 0.2);
+}
+
+input::placeholder {
+  color: #9db9a9;
+}
+
+.grupo-radio {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.grupo-radio label {
+  display: inline-flex;
+  align-items: center;
+  width: auto;
+  margin: 7px 18px 0 0;
+  font-weight: 600;
+}
+
+.grupo-radio input {
+  width: auto;
+  height: auto;
+  margin: 0 7px 0 0;
+  accent-color: #5fb37b;
+}
+
+button {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 18px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #63b87c;
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #4da66b;
+  transform: translateY(-1px);
+}
+
+button:disabled {
+  background: #a8d7b8;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 700px) {
+  .pagina {
+    padding: 18px 12px;
+  }
+
+  .tarjeta-formulario {
+    padding: 24px 18px 26px;
+  }
+
+  .cuadricula {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}

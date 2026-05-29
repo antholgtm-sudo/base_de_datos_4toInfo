@@ -1,0 +1,16 @@
+{
+  "name": "backend-practica",
+  "version": "1.0.0",
+  "description": "Backend para registro de proveedores",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mysql2": "^3.11.0",
+    "nodemon": "^3.1.10"
+  }
+}
